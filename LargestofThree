@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class LargestofThree
+{
+public static void main(String args[])
+{
+int a, b, c, large;
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter Three Numbers : ");
+a = scan.nextInt();
+b = scan.nextInt();
+c = scan.nextInt();
+large = a;
+if(large<b)
+{
+if(b>c)
+{
+large = b;
+}
+else
+{
+large = c;
+}
+}
+else if(large<c)
+{
+if(c>b)
+{
+large = c;
+}
+else
+{
+large = b;
+}
+}
+else
+{
+large = a;
+}
+System.out.print("Largest Number is " +large);
+}
+}
