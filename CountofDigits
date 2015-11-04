@@ -9,7 +9,7 @@ public class CountofDigits
 		
         System.out.print("Enter a Number : ");
         num = scan.nextInt();
-	while(num!=0)
+	while(num>0)
         {
          num = num/10;
          count++;
