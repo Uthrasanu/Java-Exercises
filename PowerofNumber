@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class PowerofNumber
+{
+    public static void main(String args[])
+    {
+        int num, power, value=1;
+        Scanner scan = new Scanner(System.in);
+		
+        System.out.print("Enter a base Number : ");
+        num = scan.nextInt();
+        
+        System.out.print("Enter a Exponant Number : ");
+        power = scan.nextInt();
+        
+        while(power!=0)
+    {
+        value=value*num;
+        --power;
+}
+        System.out.println("Power of a number is:" +value);
+}
+}
