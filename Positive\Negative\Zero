@@ -1,0 +1,13 @@
+public class PositiveNegativeZero
+ {  
+public static void main (String args [])
+{
+int a=0;        
+if (a>0)      
+System.out.println ("The number "+a+" is positive");      
+if (a<0)      
+System.out.println ("The number "+a+" is negative");      
+if (a==0)      
+System.out.println ("The number "+a+" is neutral");  
+} 
+}
