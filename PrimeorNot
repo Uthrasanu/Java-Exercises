@@ -1,4 +1,4 @@
-import java.util.Scanner;
+iimport java.util.Scanner;
 
 public class PrimeorNot
 {
@@ -8,12 +8,15 @@ int num, i, sum=0;
 Scanner scan = new Scanner (System.in);
 System.out.println("Enter a number: ");
 num = scan.nextInt();
-for(i=1;i<=num;i++)
+for(i=2;i<num;i++)
 {
 if(num%i==0)
+{
 sum++;
+break;
 }
-if(sum==2)
+}
+if(sum==0)
 {
 System.out.println("It is a Prime number");
 }
