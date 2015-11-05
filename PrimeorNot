@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class PrimeorNot
+{
+public static void main(String args[])
+{
+int num, i, sum=0;
+Scanner scan = new Scanner (System.in);
+System.out.println("Enter a number: ");
+num = scan.nextInt();
+for(i=1;i<=num;i++)
+{
+if(num%i==0)
+sum++;
+}
+if(sum==2)
+{
+System.out.println("It is a Prime number");
+}
+else
+{
+System.out.println("It is not a Prime number");
+}
+}
+}
