@@ -19,7 +19,7 @@ public static void main (String args[])
         first = second;
         second = next;
       }
-    System.out.print(next + " ");
+    System.out.println(next + " ");
     }
   }
 }
