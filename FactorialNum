@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class FactorialNum
+{
+public static void main (String args[])
+{
+int num,c,fact=1;
+Scanner scan = new Scanner (System.in);
+System.out.println("Enter the Number");
+num=scan.nextInt();
+if(num<0)
+{
+System.out.println("Error! Negative number does not exist");
+}
+else
+{
+for(c=1;c<=num;c++)
+{
+fact=fact*c;
+}
+System.out.println("Factorial Number is:" +fact);
+}
+}
+}
