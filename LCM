@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class LCM
+{
+public static void main(String args[])
+{
+int n1, n2, temp1, temp2;
+Scanner scan = new Scanner (System.in);
+System.out.println("Enter the 1st number: ");
+n1 = scan.nextInt();
+System.out.println("Enter the 2nd number: ");
+n2 = scan.nextInt();
+temp1=n1;
+temp2=n2;
+while(temp1!=temp2)
+{
+if(temp1>temp2)
+temp1=temp1-temp2;
+else
+temp2=temp2-temp1;
+}
+System.out.println("LCM ot two numbers is: "+(n1*n2)/temp1);
+}
+}
